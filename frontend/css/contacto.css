@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Contacto · estilos propios de la página
+   Se carga después de global.css
+   ========================================================================== */
+
+/* Iconografía a un tamaño más compacto en esta página */
+.material-symbols-outlined {
+  font-size: 20px;
+}
+
+/* Barra de desplazamiento sutil */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2028;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #464554;
+}

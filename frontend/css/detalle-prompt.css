@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Detalle de prompt · estilos propios de la página
+   Se carga después de global.css
+   ========================================================================== */
+
+/* Iconografía con ejes de variable font explícitos y alineación media */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Barra de desplazamiento de los bloques de código */
+pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: #0a0e16;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #31353e;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #464554;
+}

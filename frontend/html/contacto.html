@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | SpellDev - Open-Source Prompt Engineering</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../js/tailwind-config.js"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Resplandor ambiental de fondo -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[450px] bg-primary/5 blur-[140px] pointer-events-none -z-10 rounded-full"></div>
+  <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-tertiary/5 blur-[160px] pointer-events-none -z-10 rounded-full"></div>
+
+  <!-- Navegación superior -->
+  <header class="fixed top-0 left-0 w-full z-50 h-16 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 dark:border-outline-variant/20 shadow-sm dark:shadow-none">
+    <div class="max-w-[1440px] mx-auto px-8 flex items-center justify-between h-full">
+
+      <!-- Marca y búsqueda global -->
+      <div class="flex items-center gap-6">
+        <a class="flex items-center gap-2 group" href="index.html">
+          <div class="w-8 h-8 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:border-primary/50 transition-colors">
+            <span class="material-symbols-outlined">terminal</span>
+          </div>
+          <span class="text-headline-md font-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface">SpellDev</span>
+        </a>
+
+        <div class="relative hidden lg:block w-72">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline">
+            <span class="material-symbols-outlined text-[18px]">search</span>
+          </div>
+          <input class="w-full pl-9 pr-12 py-1.5 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Buscar prompts, tags, modelos..." type="text">
+          <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none">
+            <kbd class="px-1.5 py-0.5 text-[10px] font-label-badge text-outline bg-surface-container border border-outline-variant/40 rounded">⌘K</kbd>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-label-button font-label-button" href="index.html">Inicio</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-label-button font-label-button" href="biblioteca.html">Biblioteca</a>
+        <a class="text-primary dark:text-primary font-medium border-b-2 border-primary dark:border-primary pb-1 text-label-button font-label-button" href="contacto.html">Contacto</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-label-button font-label-button" href="donaciones.html">Donaciones</a>
+      </nav>
+
+      <!-- Acciones -->
+      <div class="flex items-center gap-3">
+        <a class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container/50 dark:hover:bg-surface-container/50 rounded-lg transition-all active:scale-[0.98] transition-transform duration-150" href="https://github.com" rel="noopener noreferrer" target="_blank" title="Ver código en GitHub">
+          <span class="material-symbols-outlined">code</span>
+        </a>
+        <button class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container/50 dark:hover:bg-surface-container/50 rounded-lg transition-all active:scale-[0.98] transition-transform duration-150" title="Terminal interactiva" type="button">
+          <span class="material-symbols-outlined">terminal</span>
+        </button>
+        <a class="ml-1 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:shadow-[0_0_16px_rgba(99,102,241,0.4)] text-white text-label-button font-label-button rounded-lg transition-all active:scale-[0.98]" href="#contribuir">
+          <span>Contribuir</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="flex-1 max-w-[1440px] w-full mx-auto px-8 pt-28 pb-20">
+
+    <!-- Insignia de estado -->
+    <div class="flex items-center gap-3 mb-6">
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container border border-outline-variant/30 text-label-badge font-label-badge text-primary">
+        <span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+        <span>GATEWAY DE SOPORTE &amp; COMUNIDAD</span>
+      </div>
+      <span class="text-outline text-body-sm">•</span>
+      <span class="text-on-surface-variant text-body-sm font-body-sm">v2.4.0 Engine</span>
+    </div>
+
+    <!-- Rejilla de 2 columnas -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+      <!-- Columna izquierda: información, manifiesto y bloques técnicos -->
+      <section class="lg:col-span-6 flex flex-col space-y-10">
+
+        <div>
+          <h1 class="text-headline-lg font-headline-lg text-on-surface tracking-tight mb-4">
+            Ponte en contacto
+          </h1>
+          <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+            ¿Tienes sugerencias de nuevos prompts, encontraste un error en una plantilla o quieres colaborar con la comunidad SpellDev? Escríbenos.
+          </p>
+        </div>
+
+        <!-- Canales directos -->
+        <div class="space-y-4">
+          <h2 class="text-label-badge font-label-badge text-outline tracking-wider uppercase">
+            Canales directos para desarrolladores
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <!-- Correo electrónico -->
+            <div class="p-5 bg-surface-container-low border border-outline-variant/20 rounded-xl hover:border-primary/40 transition-all group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:text-tertiary transition-colors">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                  </div>
+                  <span class="text-[11px] font-label-badge text-tertiary bg-tertiary/10 border border-tertiary/20 px-2 py-0.5 rounded">
+                    Respuesta &lt; 24h
+                  </span>
+                </div>
+                <div class="text-headline-sm font-headline-sm text-on-surface mb-1">
+                  Email Oficial
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant mb-4 font-code-inline">
+                  contacto@spelldev.org
+                </p>
+              </div>
+
+              <button class="w-full py-2 px-3 bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 rounded-lg text-label-button font-label-button text-on-surface flex items-center justify-center gap-2 transition-all active:scale-[0.98]" id="copy-email-btn" onclick="copyToClipboard('contacto@spelldev.org', 'copy-email-btn', 'copy-email-icon', 'copy-email-text')">
+                <span class="material-symbols-outlined text-[16px]" id="copy-email-icon">content_copy</span>
+                <span id="copy-email-text">Copiar correo</span>
+              </button>
+            </div>
+
+            <!-- Repositorio de GitHub -->
+            <div class="p-5 bg-surface-container-low border border-outline-variant/20 rounded-xl hover:border-primary/40 transition-all group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:text-tertiary transition-colors">
+                    <span class="material-symbols-outlined">code</span>
+                  </div>
+                  <span class="text-[11px] font-label-badge text-primary bg-primary/10 border border-primary/20 px-2 py-0.5 rounded">
+                    Issues &amp; PRs
+                  </span>
+                </div>
+                <div class="text-headline-sm font-headline-sm text-on-surface mb-1">
+                  GitHub Repository
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant mb-4 font-code-inline truncate">
+                  github.com/spelldev/prompts
+                </p>
+              </div>
+
+              <a class="w-full py-2 px-3 bg-surface-container hover:bg-surface-container-high border border-outline-variant/30 rounded-lg text-label-button font-label-button text-on-surface flex items-center justify-center gap-2 transition-all active:scale-[0.98]" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                <span>Abrir repositorio</span>
+                <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Canales de comunidad -->
+        <div class="p-5 bg-surface-container-low border border-outline-variant/20 rounded-xl flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined">forum</span>
+            </div>
+            <div>
+              <h3 class="text-label-button font-label-button text-on-surface font-semibold">Salas Abiertas de Discusión</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Discord (#prompt-engineering) &amp; Red Matrix federada</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a class="px-3 py-1.5 bg-surface-container hover:bg-surface-container-highest border border-outline-variant/30 rounded-lg text-body-sm font-body-sm text-on-surface transition-colors flex items-center gap-1.5" href="#">
+              <span>Discord</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+            </a>
+            <a class="px-3 py-1.5 bg-surface-container hover:bg-surface-container-highest border border-outline-variant/30 rounded-lg text-body-sm font-body-sm text-on-surface transition-colors flex items-center gap-1.5" href="#">
+              <span>Matrix</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Preguntas frecuentes -->
+        <div class="space-y-3 pt-2">
+          <h2 class="text-label-badge font-label-badge text-outline tracking-wider uppercase">
+            Preguntas Frecuentes
+          </h2>
+
+          <div class="space-y-3">
+            <details class="group bg-surface-container-low border border-outline-variant/20 rounded-xl p-4 transition-all [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer open:bg-surface-container">
+              <summary class="flex items-center justify-between text-body-md font-body-md font-medium text-on-surface list-none">
+                <span class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[18px]">help</span>
+                  ¿Cómo sugerir un prompt nuevo?
+                </span>
+                <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div class="mt-3 pt-3 border-t border-outline-variant/10 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Puedes rellenar el formulario adjunto seleccionando la opción <code class="text-secondary font-code-inline text-[12px] bg-surface-container-highest px-1.5 py-0.5 rounded">Sugerencia de Prompt</code> o crear un Pull Request directamente en la carpeta <code class="text-secondary font-code-inline text-[12px] bg-surface-container-highest px-1.5 py-0.5 rounded">/prompts</code> de nuestro GitHub, adjuntando tests con métricas de tokens.
+              </div>
+            </details>
+
+            <details class="group bg-surface-container-low border border-outline-variant/20 rounded-xl p-4 transition-all [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer open:bg-surface-container">
+              <summary class="flex items-center justify-between text-body-md font-body-md font-medium text-on-surface list-none">
+                <span class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+                  ¿El contenido es de dominio público?
+                </span>
+                <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div class="mt-3 pt-3 border-t border-outline-variant/10 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Sí. Toda la biblioteca de SpellDev está liberada formalmente bajo la <strong class="text-on-surface">Licencia MIT</strong>. Esto garantiza uso comercial, modificación y redistribución libre tanto para startups como para investigadores independientes.
+              </div>
+            </details>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Columna derecha: formulario de contacto -->
+      <section class="lg:col-span-6">
+        <div class="bg-surface-container-low border border-outline-variant/30 rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.35)] relative overflow-hidden backdrop-blur-sm">
+
+          <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+
+          <!-- Cabecera del formulario -->
+          <div class="mb-6 flex items-center justify-between">
+            <div>
+              <h2 class="text-headline-md font-headline-md text-on-surface">Envíanos un mensaje</h2>
+              <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                Tiempo promedio de triaje técnico: ~4 horas hábiles.
+              </p>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-surface-container border border-outline-variant/30 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined">send</span>
+            </div>
+          </div>
+
+          <form class="space-y-5" id="contact-form" onsubmit="handleFormSubmit(event)">
+
+            <!-- Nombre completo -->
+            <div>
+              <label class="block text-body-sm font-body-sm text-on-surface font-medium mb-2" for="fullName">
+                Nombre completo <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+                  <span class="material-symbols-outlined text-[18px]">person</span>
+                </div>
+                <input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest border border-outline-variant/30 rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="fullName" name="fullName" placeholder="ej. Carlos Mendoza" required type="text">
+              </div>
+            </div>
+
+            <!-- Correo electrónico -->
+            <div>
+              <label class="block text-body-sm font-body-sm text-on-surface font-medium mb-2" for="email">
+                Correo electrónico <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+                  <span class="material-symbols-outlined text-[18px]">mail</span>
+                </div>
+                <input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest border border-outline-variant/30 rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-code-inline" id="email" name="email" placeholder="ej. carlos@developer.io" required type="email">
+              </div>
+            </div>
+
+            <!-- Tipo de consulta -->
+            <div>
+              <label class="block text-body-sm font-body-sm text-on-surface font-medium mb-2" for="queryType">
+                Tipo de consulta <span class="text-primary">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+                  <span class="material-symbols-outlined text-[18px]">category</span>
+                </div>
+                <select class="w-full pl-10 pr-10 py-2.5 bg-surface-container-lowest border border-outline-variant/30 rounded-xl text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none cursor-pointer" id="queryType" name="queryType" required>
+                  <option class="text-outline" disabled selected value="">Selecciona una categoría...</option>
+                  <option class="bg-surface-container-low text-on-surface" value="prompt_suggestion">Sugerencia de Prompt</option>
+                  <option class="bg-surface-container-low text-on-surface" value="bug_report">Reporte de Error</option>
+                  <option class="bg-surface-container-low text-on-surface" value="collaboration">Colaboración / Alianzas</option>
+                  <option class="bg-surface-container-low text-on-surface" value="other">Otro</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-outline">
+                  <span class="material-symbols-outlined text-[18px]">unfold_more</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mensaje -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label class="block text-body-sm font-body-sm text-on-surface font-medium" for="message">
+                  Mensaje <span class="text-primary">*</span>
+                </label>
+                <span class="text-body-sm font-body-sm text-outline">Markdown soportado</span>
+              </div>
+              <textarea class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant/30 rounded-xl text-body-md font-body-md text-on-surface placeholder:text-outline/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-y" id="message" name="message" placeholder="Describe tu idea, solicitud o feedback técnico..." required rows="5"></textarea>
+            </div>
+
+            <!-- Licencia MIT -->
+            <div class="pt-1">
+              <label class="flex items-start gap-3 cursor-pointer group">
+                <input class="mt-1 w-4 h-4 rounded border-outline-variant/40 bg-surface-container-lowest text-primary focus:ring-primary focus:ring-offset-background cursor-pointer" id="mitLicense" name="mitLicense" required type="checkbox">
+                <span class="text-body-sm font-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors leading-normal select-none">
+                  Acepto compartir esta sugerencia bajo la licencia abierta MIT de SpellDev.
+                </span>
+              </label>
+            </div>
+
+            <!-- Envío -->
+            <div class="pt-2">
+              <button class="w-full py-3 px-6 bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:shadow-[0_0_20px_rgba(99,102,241,0.45)] text-white text-label-button font-label-button font-semibold rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98] duration-150" id="submit-btn" type="submit">
+                <span class="material-symbols-outlined text-[18px]">terminal</span>
+                <span id="submit-text">Enviar mensaje</span>
+              </button>
+            </div>
+
+            <!-- Confirmación -->
+            <div class="hidden p-3 rounded-lg bg-surface-container border border-outline-variant/40 text-body-sm font-body-sm text-primary flex items-center gap-2" id="form-feedback">
+              <span class="material-symbols-outlined text-[18px]">check_circle</span>
+              <span>¡Mensaje recibido! Nos comunicaremos al correo indicado en breve.</span>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="w-full py-12 bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 dark:border-outline-variant/20">
+    <div class="max-w-[1440px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+        <a class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface" href="index.html">
+          SpellDev
+        </a>
+        <p class="text-body-sm font-body-sm text-on-surface-variant max-w-md text-center md:text-left">
+          © 2025 SpellDev. Open-source prompt engineering library for modern AI systems. Distributed under MIT License.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-label-badge font-label-badge">
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="index.html">Inicio</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="biblioteca.html">Biblioteca</a>
+        <a class="text-primary dark:text-primary font-medium" href="contacto.html">Contacto</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="donaciones.html">Donaciones</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#">Documentación</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#">Términos y Privacidad</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/contacto.js"></script>
+</body>
+</html>
