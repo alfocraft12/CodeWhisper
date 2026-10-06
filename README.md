@@ -1,4 +1,4 @@
-# 🧠 CodeWhisper
+# 🧠 SpellDev
 
 > **Una colección de prompts optimizados para potenciar el desarrollo de software con Inteligencia Artificial.**
 
@@ -9,9 +9,9 @@
 
 ---
 
-## ✨ ¿Qué es CodeWhisper?
+## ✨ ¿Qué es SpellDev?
 
-**CodeWhisper** es una biblioteca de código abierto diseñada para desarrolladores que quieren aprovechar al máximo las herramientas de Inteligencia Artificial.
+**SpellDev** es una biblioteca de código abierto diseñada para desarrolladores que quieren aprovechar al máximo las herramientas de Inteligencia Artificial.
 
 El proyecto reúne una colección de **prompts cuidadosamente estructurados y optimizados** para trabajar con herramientas como:
 
@@ -63,7 +63,7 @@ Prompts orientados a:
 
 ---
 
-## 🎯 ¿Por qué CodeWhisper?
+## 🎯 ¿Por qué SpellDev?
 
 Trabajar con IA no consiste solamente en escribir:
 
@@ -77,7 +77,7 @@ CodeWhisper busca convertir ese conocimiento en **prompts reutilizables, claros 
 
 ## 🧠 Filosofía
 
-CodeWhisper sigue tres principios:
+SpellDev sigue tres principios:
 
 ### 🎯 Precisión
 Prompts estructurados para reducir respuestas ambiguas y resultados innecesarios.
@@ -95,18 +95,9 @@ Los prompts pueden adaptarse y reutilizarse en diferentes proyectos, lenguajes y
 La colección está organizada por categorías para facilitar la búsqueda de prompts:
 
 ```text
-CodeWhisper/
+SpellDev/
 │
-├── 🏗️ architecture/
-├── 🎨 frontend/
-├── ⚙️ backend/
-├── 🌐 fullstack/
-├── 🗄️ sql/
-├── 🐛 debugging/
-├── ♻️ refactoring/
-├── 🧪 testing/
-├── 🤖 automation/
-└── 📚 documentation/
+├──
 ```
 
 > La estructura puede evolucionar a medida que la biblioteca crezca.
@@ -161,7 +152,7 @@ La idea será permitir que cualquier desarrollador pueda:
 
 ## 🌎 Comunidad
 
-CodeWhisper busca convertirse en una colección abierta construida alrededor de una idea:
+SpellDev busca convertirse en una colección abierta construida alrededor de una idea:
 
 > **Compartir conocimiento para desarrollar mejor con IA.**
 
@@ -171,7 +162,7 @@ Ya seas estudiante, desarrollador junior, senior o simplemente estés aprendiend
 
 ## ⭐ Apoya el proyecto
 
-Si CodeWhisper te resulta útil:
+Si SpellDev te resulta útil:
 
 ⭐ **Dale una estrella al repositorio**
 
@@ -187,7 +178,7 @@ Y cuando las contribuciones estén disponibles:
 
 <div align="center">
 
-### 🧠 CodeWhisper
+### 🧠 SpellDev
 
 **Prompts inteligentes. Código mejor. Desarrollo más rápido.**
 
