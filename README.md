@@ -97,8 +97,36 @@ La colección está organizada por categorías para facilitar la búsqueda de pr
 ```text
 SpellDev/
 │
-├──
+├── frontend/
+│   ├── html/
+│   │   ├── index.html                      # Inicio
+│   │   ├── biblioteca.html                 # Biblioteca de prompts
+│   │   ├── biblioteca-sin-resultados.html  # Biblioteca · estado vacío
+│   │   ├── contacto.html                   # Contacto
+│   │   ├── detalle-prompt.html             # Detalle de prompt
+│   │   └── donaciones.html                 # Donaciones
+│   ├── css/
+│   │   ├── global.css                      # Base compartida (iconografía)
+│   │   ├── biblioteca-sin-resultados.css
+│   │   ├── contacto.css
+│   │   └── detalle-prompt.css
+│   └── js/
+│       ├── tailwind-config.js              # Configuración compartida de Tailwind
+│       ├── inicio.js
+│       ├── biblioteca-sin-resultados.js
+│       ├── contacto.js
+│       └── detalle-prompt.js
+├── backend/
+│   └── README.md
+├── DESIGN.md                               # Guía de diseño del proyecto
+└── README.md
 ```
+
+Notas sobre la estructura:
+
+- `index.html`, `biblioteca.html` y `donaciones.html` no incluyen CSS ni JS propios: su comportamiento proviene de Tailwind CDN + `tailwind-config.js` + `global.css`.
+- Cada página carga `global.css` primero y, cuando existe, su hoja de estilos específica después (los deltas de una página nunca afectan a las demás).
+- Los enlaces entre páginas son rutas relativas dentro de `frontend/html/`.
 
 > La estructura puede evolucionar a medida que la biblioteca crezca.
 
